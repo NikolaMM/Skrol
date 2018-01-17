@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="skrol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="S7q-Tp-RZx" kind="show" identifier="xxx" id="cgd-cj-l4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Secound View Controller-->
+        <scene sceneID="RIn-nA-PmJ">
+            <objects>
+                <viewController storyboardIdentifier="SecoundViewController" id="S7q-Tp-RZx" customClass="SecoundViewController" customModule="skrol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jMt-Ec-gDN"/>
+                        <viewControllerLayoutGuide type="bottom" id="6tE-6S-psn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rRm-cB-3Nl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-Zr-rWn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6tE-6S-psn" firstAttribute="top" secondItem="JVP-Zr-rWn" secondAttribute="bottom" id="2dj-mv-qUF"/>
+                            <constraint firstAttribute="trailing" secondItem="JVP-Zr-rWn" secondAttribute="trailing" id="GHu-Si-sFe"/>
+                            <constraint firstItem="JVP-Zr-rWn" firstAttribute="top" secondItem="rRm-cB-3Nl" secondAttribute="top" id="mow-gX-V7w"/>
+                            <constraint firstItem="JVP-Zr-rWn" firstAttribute="leading" secondItem="rRm-cB-3Nl" secondAttribute="leading" id="zVI-EY-2Jz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slika" destination="JVP-Zr-rWn" id="Mng-ji-R8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djk-Dr-9ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="139"/>
+        </scene>
+    </scenes>
+</document>
